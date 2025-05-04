@@ -167,6 +167,7 @@ span {
     background: var(--bg-color);
 }
 
+
 .about-img img {
     width: 35vw;
 }
@@ -187,6 +188,11 @@ span {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 
+}
+.about-content li {
+    font-size: 1.6rem; /* Match the paragraph font size */
+    margin: 1rem 0; /* Add spacing between list items */
+    line-height: 1.5; /* Improve readability */
 }
 
 .experiences h2 {
