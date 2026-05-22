@@ -1,54 +1,57 @@
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+const menuIcon = document.querySelector("#menu-icon");
+const navbar = document.querySelector(".navbar");
+const sections = document.querySelectorAll("main section");
+const navLinks = document.querySelectorAll("header nav a");
+const header = document.querySelector(".header");
 
 menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
+    menuIcon.classList.toggle("bx-x");
+    navbar.classList.toggle("active");
 };
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
+    sections.forEach((section) => {
+        const top = window.scrollY;
+        const offset = section.offsetTop - 180;
+        const height = section.offsetHeight;
+        const id = section.getAttribute("id");
 
-        if(top >= offset && top < offset + height) {
-            navLinks.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-            });
-        };
+        if (top >= offset && top < offset + height) {
+            navLinks.forEach((link) => link.classList.remove("active"));
+
+            const activeLink = document.querySelector(`header nav a[href*="${id}"]`);
+            if (activeLink) {
+                activeLink.classList.add("active");
+            }
+        }
     });
 
-    let header = document.querySelector('header');
-    header.classList.toggle('sticky', window.scrollY > 100);
-
-    menuIcon.classList.remove('bx-x');
-    navbar.classList.remove('active');
-
-
-
+    header.classList.toggle("sticky", window.scrollY > 60);
+    menuIcon.classList.remove("bx-x");
+    navbar.classList.remove("active");
 };
 
 ScrollReveal({
-    //  reset: true,
-     distance: '80px',
-     duration: 2000,
-     delay: 200
- });
+    distance: "70px",
+    duration: 1400,
+    delay: 120,
+    easing: "cubic-bezier(0.2, 0.8, 0.2, 1)"
+});
 
- ScrollReveal().reveal('.home-content, .heading', { origin: 'top'});
- ScrollReveal().reveal('.home-img, .experiences-container, .portfolio-box, .contact form', { origin: 'bottom'});
- ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left'});
- ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right'});
+ScrollReveal().reveal(".hero-copy, .section-title", { origin: "top" });
+ScrollReveal().reveal(".hero-visual, .project-card, .contact-card", { origin: "bottom", interval: 120 });
+ScrollReveal().reveal(".about-card, .panel", { origin: "left", interval: 100 });
+ScrollReveal().reveal(".focus-card", { origin: "right", interval: 120 });
 
- const typed = new Typed('.multiple-text', {
-    strings: ['Student', 'Programmer', 'Problem Solver'],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
+new Typed(".multiple-text", {
+    strings: [
+        "a final-year CSE student",
+        "a machine learning enthusiast",
+        "a backend and mobile developer",
+        "a competitive programmer"
+    ],
+    typeSpeed: 60,
+    backSpeed: 40,
+    backDelay: 1200,
     loop: true
- });
+});

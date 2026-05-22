@@ -4,198 +4,401 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robiul Islam Ryad</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <title>Md. Robiul Islam | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- header design -->
     <header class="header">
-        <a href="#" class="logo">R<span>y</span>ad</a>
-        <i class='bx bx-menu' id="menu-icon"></i>
+        <a href="#home" class="logo">Robiul<span>.</span></a>
+        <i class="bx bx-menu" id="menu-icon"></i>
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
-            <a href="#experiences">Experiences</a>
-            <a href="#portfolio">Works</a>
+            <a href="#focus">Focus</a>
+            <a href="#projects">Projects</a>
+            <a href="#achievements">Achievements</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <!-- Home Section -->
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-copy">
+                <p class="eyebrow">Final-year CSE undergraduate at KUET</p>
+                <h1>Building software with research depth, product thinking, and strong problem-solving discipline.</h1>
+                <h2>I am <span class="multiple-text"></span></h2>
+                <p class="hero-summary">
+                    I am Md. Robiul Islam, a Computer Science and Engineering student at KUET graduating in 2026.
+                    My recent work spans machine learning research, Android apps, backend systems, and competitive programming.
+                </p>
 
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello, This is me</h3>
-            <h1>Robiul Islam Ryad</h1>
-            <h3>And I am a <span class="multiple-text"></span></h3>
-            <p>I am a quick Learner and Hard worker Boy. Here I indroduce Myself with my current project and experiences.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn">View Projects</a>
+                    <a href="images/CV_Lecturer_General.pdf" class="btn btn-secondary" download>Download CV</a>
+                </div>
 
-            <div class="social-media">
-                <a href="https://www.facebook.com/"><i class='bx bxl-facebook' ></i></a>
-                <a href="https://www.instagram.com/robi.ul3486/"><i class='bx bxl-instagram' ></i></a>
-                <a href="https://www.linkedin.com/in/robiul-riyadh-b32980237/"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/Riyadh08"><i class='bx bxl-github' ></i></a>
-               
-            </div>
-            <a href="#about" class="btn">More About Me</a>
-        </div>
-
-        <div class="home-img">
-            <img src="images/ryad.png" alt="">
-        </div>
-    </section>
-
-    <!-- About Section -->
-
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="images/profile-removebg.png" alt="ryad">
-        </div>
-
-        <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-
-            <h3>Student of KUET Dept of "CSE</h3>
-            <li> Problem Solver using DSA .</li>
-            <li> OOPs using C++ & Java .</li>
-            <li> Backend Development with Laravel, Spring Boot & Django .</li>
-            <li> Android Development with Java .</li>
-            <li> CI/CD Pipline, Unit Testing, UI Testing, Integration Testing .</li>
-            <li> Operatin System Using CLI in Linux .</li>
-            <li> Databases Oracle, MySql & PostgreSQL .</li>
-            
-        </div>
-    </section>
-
-    <!-- Experiences Section -->
-
-    <section class="experiences" id="experiences">
-        <h2 class="heading">My <span>Experiences</span></h2>
-
-        <div class="experiences-container">
-            <div class="experiences-box">
-                <i class='bx bx-code-alt'></i>
-                <h3>Web Development</h3>
-                <p>I have experiences on HTML,CSS, Javascript & React Js for fronted development as well as Laravel, Spring Boot, Django for Backend. To build website dynamic and user frindly I will try my best to customize using bootstrap it's a frame work for css and javascript.</p>
-                <a href="https://www.w3schools.com/whatis/" class="btn">Learn More</a>
-            </div>
-            <div class="experiences-box">
-                <i class='bx bxl-android'></i>
-                <h3>Android App Development</h3>
-                <p>I have Experiences on XML as a fronted and JAVA as a backend languge to developed android app on andrid studio. I also work on API, JESON Parsing and Payment Gate Way to make My project Which is Railway management system.</p>
-                <a href="https://developer.android.com/" class="btn">Learn More</a>
-            </div>
-            <div class="experiences-box">
-                <i class='bx bxl-c-plus-plus' ></i>
-                <h3>C/C++ Programming</h3>
-                <p>As C is called mother lagnuage, Many more OS are bulid using C programing because it's So faster than other Programing lagnuage. It is a Mid level language. I have also Knowlwdge on OOP in C++ & Java.</p>
-                <a href="https://www.w3schools.com/c/index.php" class="btn">Learn More</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Work Section -->
-
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Project</span></h2>
-
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="images/web_design.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>I Can design webpage by using html css and javascript.</p>
-                    <a href="https://github.com/Riyadh08/Currency_Convertor.git"><i class='bx bx-link-external'></i></a>
+                <div class="social-media">
+                    <a href="mailto:robiulriyadh66@gmail.com" aria-label="Email"><i class="bx bx-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/robiul-riyadh-b32980237/" aria-label="LinkedIn" target="_blank" rel="noreferrer"><i class="bx bxl-linkedin"></i></a>
+                    <a href="https://github.com/Riyadh08" aria-label="GitHub" target="_blank" rel="noreferrer"><i class="bx bxl-github"></i></a>
+                    <a href="tel:+8801773844866" aria-label="Phone"><i class="bx bx-phone"></i></a>
                 </div>
             </div>
-            <div class="portfolio-box">
-                <img src="images/Travel.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>C++ Project</h4>
-                    <p>Using C++ OOP I build cosole application.</p>
-                    <a href="https://github.com/Riyadh08/Blood-Donation.git"><i class='bx bx-link-external'></i></a>
+
+            <div class="hero-visual">
+                <div class="portrait-wrap">
+                    <img src="images/ryad.png" alt="Portrait of Md. Robiul Islam">
+                </div>
+                <div class="metric-card metric-card-top">
+                    <strong>700+</strong>
+                    <span>Problems solved across Codeforces, LeetCode, and CodeChef</span>
+                </div>
+                <div class="metric-card metric-card-bottom">
+                    <strong>CGPA 3.70/4.00</strong>
+                    <span>KUET, BSc in Computer Science and Engineering</span>
                 </div>
             </div>
-            <div class="portfolio-box">
-                <img src="images/Rail_way.jpeg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Android App</h4>
-                    <p>It's My first android project develop by using android studio.Here I use Firebase,API and Payment Gateway.There are Two types of login user as well as admin.</p>
-                    <a href="https://github.com/Riyadh08/RailSheba.git"><i class='bx bx-link-external'></i></a>
+        </section>
+
+        <section class="about section-block" id="about">
+            <div class="section-title">
+                <p class="eyebrow">About Me</p>
+                <h2>Growing from a student portfolio into a research-ready software profile.</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card">
+                    <img src="images/profile-removebg.png" alt="Md. Robiul Islam profile">
+                </div>
+
+                <div class="about-card about-story">
+                    <p>
+                        I am passionate about machine learning, software engineering, and academic research. My thesis work focuses on
+                        low-compute vision architectures for resource-constrained environments, where I applied mixed-precision quantization
+                        on Vision Transformers for more efficient edge deployment.
+                    </p>
+                    <p>
+                        Alongside research, I enjoy building practical systems: Android applications, backend-driven web products,
+                        and recommendation tools. I also maintain a steady competitive programming habit that strengthens my algorithmic thinking.
+                    </p>
+
+                    <div class="mini-facts">
+                        <div>
+                            <span>Location</span>
+                            <strong>Dhaka, Bangladesh</strong>
+                        </div>
+                        <div>
+                            <span>Expected Graduation</span>
+                            <strong>2026</strong>
+                        </div>
+                        <div>
+                            <span>Current Interest</span>
+                            <strong>ML Systems and Software Engineering</strong>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="portfolio-box">
-                <img src="images/currency_converter.jpeg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Project</h4>
-                    <p>This currency_converter App is developed by using HTML,CSS and Javascript.Here I use an external API to Track the Current Money value.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
-                </div>
+        </section>
+
+        <section class="focus section-block" id="focus">
+            <div class="section-title">
+                <p class="eyebrow">Core Focus</p>
+                <h2>The areas I have been strengthening through coursework, projects, and research.</h2>
             </div>
-            <div class="portfolio-box">
-                <img src="images/database.jpeg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Database Project</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sed facere fugit, tempora quas totam eligendi minima voluptates qui! Doloremque maiores necessitatibus iure assumenda tenetur. Vel in quod fugiat rem.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
-                </div>
+
+            <div class="focus-grid">
+                <article class="focus-card">
+                    <i class="bx bx-brain"></i>
+                    <h3>Research and Machine Learning</h3>
+                    <p>Working on efficient deep learning architectures for constrained environments, with interest in practical deployment and optimization.</p>
+                </article>
+                <article class="focus-card">
+                    <i class="bx bx-mobile-alt"></i>
+                    <h3>Mobile and App Development</h3>
+                    <p>Built Android and iOS projects using Java, XML, Swift, and SwiftUI with local storage, Firebase, and clean architecture patterns.</p>
+                </article>
+                <article class="focus-card">
+                    <i class="bx bx-server"></i>
+                    <h3>Backend and Full-Stack Systems</h3>
+                    <p>Hands-on with Laravel, Django, Spring Boot, and SQL-backed products for recommendation, commerce, and management workflows.</p>
+                </article>
             </div>
-            <div class="portfolio-box">
-                <img src="images/image.jpeg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Software Development</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sed facere fugit, tempora quas totam eligendi minima voluptates qui! Doloremque maiores necessitatibus iure assumenda tenetur. Vel in quod fugiat rem.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
-                </div>
+
+            <div class="details-grid">
+                <article class="panel">
+                    <h3>Technical Stack</h3>
+                    <div class="tag-list">
+                        <span>C</span>
+                        <span>C++</span>
+                        <span>Java</span>
+                        <span>Python</span>
+                        <span>PHP</span>
+                        <span>Swift</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Django</span>
+                        <span>Laravel</span>
+                        <span>Spring Boot</span>
+                        <span>Firebase</span>
+                        <span>MySQL</span>
+                        <span>PostgreSQL</span>
+                        <span>SQLite</span>
+                        <span>Room</span>
+                        <span>Git</span>
+                        <span>Gradle</span>
+                        <span>Maven</span>
+                        <span>LaTeX</span>
+                    </div>
+                </article>
+
+                <article class="panel">
+                    <h3>Education and Thesis</h3>
+                    <ul class="timeline">
+                        <li>
+                            <strong>BSc in Computer Science and Engineering</strong>
+                            <span>Khulna University of Engineering and Technology, 2022-2026</span>
+                            <span>CGPA: 3.70 / 4.00</span>
+                        </li>
+                        <li>
+                            <strong>Thesis</strong>
+                            <span>Design and Optimization of Low-Compute Vision Architecture for Resource-Constrained Environments</span>
+                        </li>
+                        <li>
+                            <strong>Academic Background</strong>
+                            <span>HSC GPA 5.00 and SSC GPA 5.00</span>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="panel">
+                    <h3>Community and Activities</h3>
+                    <ul class="timeline">
+                        <li>
+                            <strong>Bit2Byte</strong>
+                            <span>Member, Software R&amp;D Community at KUET</span>
+                        </li>
+                        <li>
+                            <strong>SGIPC</strong>
+                            <span>Programming contest group member focused on algorithmic problem solving</span>
+                        </li>
+                        <li>
+                            <strong>BitFest 2025</strong>
+                            <span>Event organizer for the 24-hour hackathon at KUET CSE national festival</span>
+                        </li>
+                    </ul>
+                </article>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
-
-        <form action="#">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
-
+        <section class="projects section-block" id="projects">
+            <div class="section-title">
+                <p class="eyebrow">Selected Work</p>
+                <h2>Projects that show how I build across mobile, backend, and applied AI.</h2>
             </div>
-            <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
 
+            <div class="projects-grid">
+                <article class="project-card">
+                    <img src="images/Rail_way.jpeg" alt="Railway Management System project preview">
+                    <div class="project-copy">
+                        <h3>Railway Management System</h3>
+                        <p>Android ticketing app with admin and user roles, route search, schedule management, and booking flow.</p>
+                        <div class="project-tags">
+                            <span>Android</span>
+                            <span>Java</span>
+                            <span>Firebase</span>
+                            <span>REST API</span>
+                        </div>
+                        <a href="https://github.com/Riyadh08/RailSheba.git" target="_blank" rel="noreferrer">Open Project</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="images/image.jpeg" alt="Cardiac Recorder project preview">
+                    <div class="project-copy">
+                        <h3>Cardiac Recorder</h3>
+                        <p>Team-built Android app for blood pressure and heart-rate tracking with offline and online data synchronization.</p>
+                        <div class="project-tags">
+                            <span>Android</span>
+                            <span>SQLite</span>
+                            <span>Firebase</span>
+                            <span>JUnit</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="images/web_design.jpg" alt="Bangla Book Recommendation System project preview">
+                    <div class="project-copy">
+                        <h3>Bangla Book Recommendation System</h3>
+                        <p>Full-stack web platform that uses machine learning and hybrid recommendation methods for Bangla readers.</p>
+                        <div class="project-tags">
+                            <span>Django</span>
+                            <span>Machine Learning</span>
+                            <span>SQLite</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="images/currency_converter.jpeg" alt="Grocery Shopping Web App preview">
+                    <div class="project-copy">
+                        <h3>Grocery Shopping Web App</h3>
+                        <p>Responsive e-commerce application with registration, product browsing, and checkout management.</p>
+                        <div class="project-tags">
+                            <span>Laravel</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="images/Travel.jpg" alt="Blood Bank Management project preview">
+                    <div class="project-copy">
+                        <h3>Blood Bank Management</h3>
+                        <p>Console-based OOP system for donor and acceptor workflows with admin-controlled records for KUET-focused use.</p>
+                        <div class="project-tags">
+                            <span>C++</span>
+                            <span>OOP</span>
+                            <span>CLI</span>
+                        </div>
+                        <a href="https://github.com/Riyadh08/Blood-Donation.git" target="_blank" rel="noreferrer">Open Project</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="images/database.jpeg" alt="Recipe Book iOS project preview">
+                    <div class="project-copy">
+                        <h3>Recipe Book</h3>
+                        <p>Team iOS application with a clean interface for browsing and exploring recipes using SwiftUI.</p>
+                        <div class="project-tags">
+                            <span>iOS</span>
+                            <span>Swift</span>
+                            <span>SwiftUI</span>
+                        </div>
+                    </div>
+                </article>
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>
-    </section>
+        </section>
 
-    <!-- Footer Section -->
+        <section class="achievements section-block" id="achievements">
+            <div class="section-title">
+                <p class="eyebrow">Achievements</p>
+                <h2>Competitive programming, academic milestones, and campus contributions.</h2>
+            </div>
+
+            <div class="achievements-grid">
+                <article class="panel">
+                    <h3>Problem Solving Profile</h3>
+                    <ul class="timeline">
+                        <li>
+                            <strong>700+ solved problems</strong>
+                            <span>Across Codeforces, LeetCode, and CodeChef</span>
+                        </li>
+                        <li>
+                            <strong>Codeforces</strong>
+                            <span>400+ problems solved under the handle RYAD08</span>
+                        </li>
+                        <li>
+                            <strong>LeetCode</strong>
+                            <span>150+ problems solved under the handle Robiul Riyadh</span>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="panel">
+                    <h3>Recognitions</h3>
+                    <ul class="timeline">
+                        <li>
+                            <strong>Dean's Award</strong>
+                            <span>Faculty of EEE, academic excellence</span>
+                        </li>
+                        <li>
+                            <strong>SGIPC Programming Contest</strong>
+                            <span>8th in team contest and 11th in individual contest</span>
+                        </li>
+                        <li>
+                            <strong>BitFest KUET Datathon</strong>
+                            <span>62nd position at CSE Fest 2025</span>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="panel">
+                    <h3>Earlier Academic Achievement</h3>
+                    <ul class="timeline">
+                        <li>
+                            <strong>Rajshahi Division Science Olympiad</strong>
+                            <span>4th position in the regional competition</span>
+                        </li>
+                        <li>
+                            <strong>Languages</strong>
+                            <span>Bengali: native, English: proficient in reading, writing, and speaking</span>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact section-block" id="contact">
+            <div class="section-title">
+                <p class="eyebrow">Contact</p>
+                <h2>Let's connect for research, collaboration, internships, or software opportunities.</h2>
+            </div>
+
+            <div class="contact-grid">
+                <a class="contact-card" href="mailto:robiulriyadh66@gmail.com">
+                    <i class="bx bx-envelope"></i>
+                    <div>
+                        <span>Email</span>
+                        <strong>robiulriyadh66@gmail.com</strong>
+                    </div>
+                </a>
+
+                <a class="contact-card" href="tel:+8801773844866">
+                    <i class="bx bx-phone"></i>
+                    <div>
+                        <span>Phone</span>
+                        <strong>+880 1773 844866</strong>
+                    </div>
+                </a>
+
+                <a class="contact-card" href="https://www.linkedin.com/in/robiul-riyadh-b32980237/" target="_blank" rel="noreferrer">
+                    <i class="bx bxl-linkedin"></i>
+                    <div>
+                        <span>LinkedIn</span>
+                        <strong>Connect professionally</strong>
+                    </div>
+                </a>
+
+                <a class="contact-card" href="https://github.com/Riyadh08" target="_blank" rel="noreferrer">
+                    <i class="bx bxl-github"></i>
+                    <div>
+                        <span>GitHub</span>
+                        <strong>Explore code and repositories</strong>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer">
-        <div class="footer-iconTop">
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        <p>Copyright &copy; 2026 Md. Robiul Islam. All rights reserved.</p>
+        <div class="footer-actions">
+            <a href="images/CV_Lecturer_General.pdf" class="btn btn-small" download>Download CV</a>
+            <a href="images/Resume_General.pdf" class="btn btn-small btn-secondary" download>Download Resume</a>
         </div>
-        
-        <div class="footer-text">
-            <p>Copyright &copy; 2024 by Ryad | All Rights Reserved.</p>
-        </div>
-         <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
-  
     </footer>
-
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-    
     <script src="script.js"></script>
-    
 </body>
 </html>
