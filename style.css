@@ -50,6 +50,7 @@ main {
 
 section {
     padding: 11rem 8% 0;
+    scroll-margin-top: 9rem;
 }
 
 .section-block {
@@ -619,6 +620,7 @@ section {
         min-height: auto;
         gap: 2.8rem;
         padding-top: 13.5rem;
+        scroll-margin-top: 11rem;
     }
 
     .hero-copy h1 {
@@ -693,6 +695,7 @@ section {
     .hero {
         padding-top: 12.5rem;
         gap: 2.4rem;
+        scroll-margin-top: 10rem;
     }
 
     .eyebrow {
